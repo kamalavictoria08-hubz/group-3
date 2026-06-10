@@ -1,0 +1,26 @@
+:root {
+    --blue: #007bff;
+--red: #dc3545;
+--dark: #343a40;
+--gray: #6c757d;
+--border: #dee2e6;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.5;
+}
+header,
+main {
+ max-width: 800px;
+ margin: 0 auto 20px auto;
+}
+.navbar {
+ display: flex;
+ gap:10px;
+ margin:15px 0;
+ padding-bottom: 10px 0;
+ border-bottom: 2px solid var(--red);
+}
