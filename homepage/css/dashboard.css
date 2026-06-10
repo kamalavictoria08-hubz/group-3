@@ -65,6 +65,12 @@ img{
     font-weight: 600;
     border-radius: 5px;
     background-color: #1d788b82;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #5591bfa4;
 }
 
 
@@ -184,11 +190,23 @@ section{
 }
 
 .content-wrapper{
+    display: flex;
+    justify-content: center;
     padding: 2em;
     margin: 2em;
     border: none;
     border-radius: 1em;
-    background-color: #0b304c2d;
+    background-color:#f8f4f4;
+}
+
+.content-text button{
+    margin-top: 3em;
+    cursor: pointer;
+    transition: background-color .4s ease;
+}
+
+.content-text button:hover{
+    background-color: #5591bfa4;
 }
 
 /*categories*/
@@ -199,7 +217,7 @@ section{
 }
 
 .cat-item{
-    background-color: #1b788bc6;
+    background-color: #f8f4f4;
     width: 200px;
     height: 250px;
     border-radius: 5px;
@@ -210,5 +228,24 @@ section{
 
 .layout{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns:1fr 1fr 1fr;
+}
+
+.card-img{
+    width: 25em;
+    max-height: 50em;
+    padding: 0;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.card-img:hover{
+    background-color: #f3efefcc;
+    padding: 0;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+}
+
+.img-card{
+    margin-top: 1.5em;
+    padding:-3em;
 }
