@@ -174,7 +174,19 @@ section{
 }
 
 /*categories*/
+.categories{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2em;
+}
 
+.cat-item{
+    background-color: #0b304cc6;
+    width: 200px;
+    height: 250px;
+    border-radius: 5px;
+    margin-top: 5em;
+}
 
 /**layout*/
 
