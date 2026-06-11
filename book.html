@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="book.css" type="text/css">
+
+</head>
+
+<body>
+    <div class="booking-container">
+        <h2>Book your car today</h2>
+    </div>
+
+    <main>
+        <form action="#" method="post"></form>
+        <div class="form group">
+            <select required>
+                <option value="disabled" disabled selected>Select a car</option>
+                <option value="sedan">Sedan</option>
+                <option value="suv">SUV</option>
+                <option value="hatchback">Hatchback</option>
+                <option value="convertible">Convertible</option>
+        </div>
+        <div class="col">
+            <select required>
+                <option value="disabled" disabled selected>select pick up date</option>
+                <option>airport terminal</option>
+            </select>
+
+        </div>
+        <div class="col">
+            <input type="datetime-local" required><br><br>
+        </div>
+        <div class="col">
+            <select required>
+                <option value="disabled" disabled selected>select drop off date</option>
+                <option>airport terminal</option>
+
+            </select>
+        </div>
+        <div class="col">
+            <input type="datetime-local" required><br><br>
+        </div>
+        <div class="form group">
+            <input type="text" placeholder="your name" required><br><br>
+        </div>
+        <div class="form group">
+            <input type="email" placeholder="email" required><br><br>
+        </div>
+        <div class="form group">
+            <input type="text" placeholder="phone number" required><br><br>
+        </div>
+        <div class="form group">
+            <input type="submit" value="confirm car booking">
+        </div>
+    </main>
+
+</body>
+
+</html>
