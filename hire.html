@@ -4,10 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CarHire.com</title>
-    link rel="stylesheet" href="css/style.css"type="text/css">
+    <link rel="stylesheet" href="css/style.css"type="text/css">
 </head>
 <body>
+    <button id="openFormBtn">Hire Registration</button>
+    <div id="formalModal" class="modal-overlay">
+        <div class="modal-content">
+            <span id="closeFormBtn" class="close-btn">&times;</span>
+
+            <h2>Registration Form</h2>
+
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="userEmail">Email Address:</label>
+                    <input type="email" id="userEmail" name="userEmail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="licenseNumber">License / Driver's License:</label>
+                    <input type="text" id="licenseNumber" name="licenseNumber" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="nationalID">National ID:</label>
+                    <input type="text" id="nationalID" name="nationalID" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="homeTown">Home Town:</label>
+                    <input type="text" id="homeTown" name="homeTown" required>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
     
-    
+ <script>
+    const modal = document.getElementById('formModal');
+    const openBtn = document.getElementById('openFormBtn');
+    const closeBtn = document.getElementById('closeBtn');
+
+    openBtn.addEventListener('click', function() {
+        modal.classList.add('active');
+        modal.style.display = 'flex';
+    });
+
+    closeBtn.addEventListener('click', function() {
+        modal.classList.remove('active');
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.classList.remove('active');
+            modal.style.display = 'none';
+        }
+    });
+ </script>   
 </body>
 </html>
