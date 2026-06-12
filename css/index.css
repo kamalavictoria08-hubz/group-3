@@ -5,7 +5,7 @@
 }
 
 /**Homepage layout*/
-p{
+footer p{
     text-align: center;
 }
 
@@ -18,7 +18,7 @@ p{
 
 .header-container{
     background-color: #1e506fcc; 
-    padding: 15px 20px;
+    padding: 10px 20px;
 }
 
 .main-container{
@@ -55,12 +55,18 @@ ul{
 }
 
 .nav-links a:hover{
-    background-color: #052a49c8;
+    background-color: #0e4b71;
+
+}
+
+.auth-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 2em;
 }
 
 .auth-link a{
-    position: relative;
-    right: 2em;
     color: white;
     text-decoration: none;
     padding: .5em;
@@ -69,7 +75,7 @@ ul{
 }
 
 .auth-link a:hover{
-    background-color: #052a49c8;
+    background-color: #0e4b71;
 }
 
 .logo a{
@@ -82,3 +88,53 @@ ul{
 
 /**main content/
 
+/*hero section*/
+.hero-container{
+    background: linear-gradient(#052a4975, #1e506f4b), url("../thumbnails/Bobber.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 650px;
+    align-items: center;
+}
+
+.content-text{
+    color: white;
+    font-family: sans-serif;
+    margin: 10px;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    gap:2.5em;
+}
+
+.btn{
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0e506f;
+    color: white;
+    font-weight:400;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: background-color .2s ease;
+}
+
+.btn a{
+    color:white;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.btn:hover{
+    background-color: #007cc8;
+}
