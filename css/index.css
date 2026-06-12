@@ -17,8 +17,8 @@ p{
 }
 
 .header-container{
-    background-color: #1e506fcc;
-  
+    background-color: #1e506fcc; 
+    padding: 15px 20px;
 }
 
 .main-container{
@@ -30,7 +30,6 @@ p{
 }
 
 /*Navigation Bar*/
-
 ul{
     list-style: none;
 }
@@ -60,7 +59,8 @@ ul{
 }
 
 .auth-link a{
-    margin-right: 3em;
+    position: relative;
+    right: 2em;
     color: white;
     text-decoration: none;
     padding: .5em;
@@ -73,8 +73,12 @@ ul{
 }
 
 .logo a{
-    margin-left: 3em;
+    position: relative;
+    left: 2em;
     text-decoration: none;
     font-weight: 700;
     color: white;
 }
+
+/**main content/
+
