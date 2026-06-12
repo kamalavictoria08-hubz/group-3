@@ -1,0 +1,33 @@
+.homepage{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+/**Homepage layout*/
+p{
+    text-align: center;
+}
+
+.homepage{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+
+}
+
+.header-container{
+    background-color: #1e506fcc;
+   
+}
+
+.main-container{
+    background-color: #eeecec;
+   
+}
+
+.footer-container{
+    background-color: #052a49c8;
+
+}
