@@ -14,20 +14,67 @@ p{
     grid-template-columns:1fr;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-
 }
 
 .header-container{
     background-color: #1e506fcc;
-   
+  
 }
 
 .main-container{
-    background-color: #eeecec;
-   
+    background-color: #eeecec;  
 }
 
 .footer-container{
     background-color: #052a49c8;
+}
 
+/*Navigation Bar*/
+
+ul{
+    list-style: none;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-container ul{
+   display: flex;
+   flex-direction: row;
+   gap: 1.5em;
+}
+
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    transition: background-color .4s ease;
+    padding:.5em;
+    border-radius: 15px;
+    border: none;
+}
+
+.nav-links a:hover{
+    background-color: #052a49c8;
+}
+
+.auth-link a{
+    margin-right: 3em;
+    color: white;
+    text-decoration: none;
+    padding: .5em;
+    border-radius: 15px;
+    transition: background-color .4s ease;
+}
+
+.auth-link a:hover{
+    background-color: #052a49c8;
+}
+
+.logo a{
+    margin-left: 3em;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
 }
