@@ -7,7 +7,18 @@
 span{
     color: rgb(228, 64, 5);
 }
+ul{
+    list-style: none;
+}
 
+a{
+    color:#007cc8;
+    text-decoration: none;
+    transition: .4s ease;
+}
+a:hover{
+    text-decoration:underline;
+}
 /**Homepage layout*/
 footer p{
     text-align: center;
@@ -34,9 +45,6 @@ footer p{
 }
 
 /*Navigation Bar*/
-ul{
-    list-style: none;
-}
 .header-container{
     display: flex;
     align-items: center;
@@ -99,7 +107,7 @@ ul{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 100px;
+    padding: 110px;
 }
 
 .content{
@@ -147,9 +155,6 @@ ul{
 
 /*vid container*/
 .content-details{
-    position: relative;
-    top: 3em;
-    left: 12em;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -175,42 +180,53 @@ ul{
     max-width: 400px;
 }
 
-
 .video-container video{
     height: auto;
     width: 100%;
     display: block;
 }
 
+/*cards*/
 
-
-/**Service section*/
-.service-container{
-    display:flex;
-    justify-content: center;
-    gap: 2em;
-    background-color:#bcc1c4cc;
-    min-height: 100vh;
-}
-
-.service-content{
+.main-card{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background-color:#adbcc697;
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:1em;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #dee4e6;
+    height: 230px;
+    width: 400px;
     padding: 2em;
+    transition: .5s ease;
 }
 
-.service-card{
-    position:relative;
-    top: 30px;
-    background-color: #d8dee1;
-    height:250px;
-    text-align: center;
-    border-radius: 5px;
-    transition: box-shadow .4s ease;
-       
+.card:hover{
+    box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.2);
+    transform: translateY(-3px);
 }
 
-.service-card:hover{
-    box-shadow: 5px 0px 15px 5px rgba(0,0,0,0.2);
-    transform: translateY(-3px);    
+.card h2{
+    color:#007cc8;
+    font-weight: 500;
+    padding: 1em;
+}
+.card p{
+    color:rgb(0, 0, 0);
+    font-weight: 400;
 }
