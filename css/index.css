@@ -12,7 +12,7 @@ ul{
 }
 
 img{
-    max-width: 15em;
+    max-width: 17em;
 }
 
 a{
@@ -253,8 +253,7 @@ footer p{
 }
 .main-cat{
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(4, auto);
     align-content: center;
     justify-content: center;
     min-height: 100vh;
@@ -267,8 +266,13 @@ footer p{
     align-items: center;
     gap: .5em;
     background-color: #adbcc697;
+    transition: .7s ease;
 }
 
+.cat-item:hover{
+    box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.2);
+    transform: translateY(-2px);
+}
 .div-main{
     display: flex;
     flex-direction: column;
@@ -300,4 +304,60 @@ footer p{
     cursor: pointer;
     color: white;
     border-radius: 5px;
+    transition: background-color .4s ease;
+}
+
+.cat-btn:hover{
+    background-color: #007cc8;
+}
+
+.badge{
+    padding:2em;
+    
+}
+
+/*process section*/
+.process{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 2px;
+}
+
+.pro-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2e8ea3b;
+    gap: 20px;
+}
+
+.pro-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2px;
+    background-color: #adbcc697;
+    min-height: 200px;
+    max-width: 410px;
+    border: none;
+}
+
+.pro-text h3{
+    text-align: center;
+    color: #007cc8;
+    margin-top: 10px;
+}
+
+.pro-text p{
+    text-align: center;
+    color:#000;
+    margin-top: 10px;
+}
+
+.pro-icons{
+    width: 5em;
 }
