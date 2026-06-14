@@ -333,7 +333,10 @@ footer p{
     align-items: center;
     justify-content: center;
     gap: 20px;
-    padding: 2px;
+    padding: 100px;
+    margin-bottom: 5em;
+    background-color:  #adbcc697;
+    
 }
 
 .pro-container{
@@ -341,7 +344,6 @@ footer p{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #e2e8ea3b;
     gap: 20px;
 }
 
@@ -350,27 +352,31 @@ footer p{
     flex-direction: column;
     align-items: center;
     padding: 2px;
-    background-color: #adbcc697;
-    min-height: 200px;
-    max-width: 410px;
+    background-color: #dee4e6;
+    min-height: 300px;
+    max-width: 430px;
     border: none;
+    border-top-left-radius: 75px;
+    border-bottom-right-radius:75px ;
 }
 
 .pro-text h3{
     text-align: center;
     color: #007cc8;
     margin-top: 10px;
+    font-family: sans-serif;
 }
 
 .pro-text p{
     text-align: center;
     color:#000;
     margin-top: 10px;
+    font-family: sans-serif;
 }
 
 .pro-icons{
     width: 5em;
-
+    padding: 1em;
 }
 
 /*footer*/
