@@ -28,20 +28,11 @@ a:hover{
     width: 20px;
 }
 /**Homepage layout*/
-footer p{
-    text-align: center;
-}
-
 .homepage{
     display: grid;
     grid-template-columns:1fr;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
-}
-
-.header-container{
-    background-color: #1e506fcc; 
-    padding: 10px 20px;
 }
 
 .main-container{
@@ -53,7 +44,10 @@ footer p{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #1e506f; 
     padding: 20px;
+    position: sticky;
+    top: 0;
 }
 
 .nav-container ul{
