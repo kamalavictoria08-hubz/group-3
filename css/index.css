@@ -156,103 +156,21 @@ footer p{
     background-color: #007cc8;
 }
 
-
-/*vid container*/
-.content-details{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    gap: 30px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-    
-}
-
-.details{
-    flex: 1;
-}
-
-.text-detail{
-    padding: .5em;
-}
-
-.video-container{
-    flex: 1;
-    max-width: 400px;
-}
-
-.video-container video{
-    height: auto;
-    width: 100%;
-    display: block;
-}
-
-/*cards*/
-
-.main-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height:100vh;
-    background-color:#adbcc697;
-}
-.card-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap:1em;
-}
-
-.card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #dee4e6;
-    height: 230px;
-    width: 400px;
-    padding: 2em;
-    transition: .5s ease;
-}
-
-.card:hover{
-    box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.2);
-    transform: translateY(-3px);
-}
-
-.card h2{
-    color:#007cc8;
-    font-weight: 500;
-    padding: 1em;
-}
-.card p{
-    color:rgb(0, 0, 0);
-    font-weight: 400;
-}
-
-.card-title{
-    padding: 2em;
-}
-
 /*catalog section*/
-
 .catalog{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
+
 }
 .main-cat{
     display: grid;
     grid-template-columns: repeat(4, auto);
     align-content: center;
     justify-content: center;
-    min-height: 100vh;
+    margin-bottom:3.4em;
     gap: 20px;
 }
 
@@ -306,12 +224,106 @@ footer p{
 .cat-btn:hover{
     background-color: #007cc8;
 }
+.catalog h2{
+    margin:2em;
+}
 
-.badge{
-    padding:2em;
+.explore-btn{
+    display: flex;
+    align-items: center;
+    justify-content:right;   
+}
+.explore-btn a{
+    height: 2.5em;
+    width: 8em;
+    text-align:center;
+    color: white;
+    text-decoration: none;
+    border: none;
+    background-color: #1e506fcc;
+    border-radius: 5px;
     
 }
 
+/*vid container*/
+.content-details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: 5em auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+    
+}
+
+.details{
+    flex: 1;
+}
+
+.text-detail{
+    padding: .5em;
+}
+
+.video-container{
+    flex: 1;
+    max-width: 400px;
+}
+
+.video-container video{
+    height: auto;
+    width: 100%;
+    display: block;
+}
+
+/*cards*/
+.main-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    background-color:#adbcc697;
+}
+.card-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:1em;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #dee4e6;
+    height: 230px;
+    width: 400px;
+    padding: 2em;
+    transition: .5s ease;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.2);
+    transform: translateY(-3px);
+}
+
+.card h2{
+    color:#007cc8;
+    font-weight: 500;
+    padding: 1em;
+}
+.card p{
+    color:rgb(0, 0, 0);
+    font-weight: 400;
+}
+
+.card-title{
+    padding: 2em;
+}
 /*process section*/
 .process{
     display: flex;
@@ -414,6 +426,13 @@ footer p{
 .footer-items a{
     color:#ffffff;
     font-family: sans-serif;
+    text-decoration: none;
+    transition: .4s ease;
+}
+
+.footer-items a:hover{
+    transform: translateX(5px);
+    text-decoration: underline;
 }
 
 .footer-icons{
@@ -426,12 +445,6 @@ footer p{
     color:#ffffff;
     margin-left:2px;
     font-family: sans-serif;
-    text-decoration: none;
-    transition: .4s ease;
-}
-
-.footer-icons a:hover{
-    text-decoration: underline;
 }
 
 .link-icons{
@@ -447,13 +460,18 @@ footer p{
 .icon-card{
     display: flex;
     gap: .5em;
-    transition: background-color .4s ease;
+    transition: .4s ease;
 }
 
 .icon-card:hover{
-    transform: translateX(3px);
+    transform: translatey(-4px);
 }
 
 .side-icon{
     width: 1.3em;
+}
+
+.footer-end{
+    display: flex;
+    align-items: start;
 }
