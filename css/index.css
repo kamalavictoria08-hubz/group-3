@@ -48,10 +48,6 @@ footer p{
     background-color: #eeecec;  
 }
 
-.footer-container{
-    background-color: #052a49c8;
-}
-
 /*Navigation Bar*/
 .header-container{
     display: flex;
@@ -360,4 +356,104 @@ footer p{
 
 .pro-icons{
     width: 5em;
+
+}
+
+/*footer*/
+.footer-container{
+    background-color:#062c46cd; 
+}
+
+.div-footer{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 20px;
+    min-height: 50vh;
+}
+
+.footer-card{
+    max-width: 410px;
+    margin: 15px;
+}
+
+.footer-card h3{
+    color: #e7ebed;
+    text-align:start;
+    margin: 10px;
+}
+
+.footer-card p{
+    text-align:start;
+    color: #ffffff;
+    margin: 10px;
+    font-family: sans-serif;
+}
+
+.footer-btn input{
+    width: 15em;
+    height: 2.5em;
+    margin-left: .8em;
+    padding: 5px;   
+}
+
+.footer-btn button{
+    height: 2.5em;
+    border: none;
+    background-color: #007bc8ac;
+    cursor: pointer;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap:10px;
+}
+
+.footer-items a{
+    color:#ffffff;
+    font-family: sans-serif;
+}
+
+.footer-icons{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.footer-icons a{
+    color:#ffffff;
+    margin-left:2px;
+    font-family: sans-serif;
+    text-decoration: none;
+    transition: .4s ease;
+}
+
+.footer-icons a:hover{
+    text-decoration: underline;
+}
+
+.link-icons{
+   display: flex;
+   gap: 15px;
+}
+
+.link-icons img{
+     width: 2em;
+     cursor: pointer;
+}
+
+.icon-card{
+    display: flex;
+    gap: .5em;
+    transition: background-color .4s ease;
+}
+
+.icon-card:hover{
+    transform: translateX(3px);
+}
+
+.side-icon{
+    width: 1.3em;
 }
