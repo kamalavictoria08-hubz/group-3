@@ -55,7 +55,10 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: skyblue;
+    background-image: url(OIP.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
 }
 
 .login-container {
@@ -65,6 +68,9 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
+    background-image: url(OIP.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 h2 {
@@ -100,7 +106,7 @@ h2 {
 .login-btn {
     width: 100%;
     padding: 12px;
-    background: blue;
+    background:
     color: white;
     border: none;
     border-radius: 6px;
