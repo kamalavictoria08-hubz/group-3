@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CarHire.com</title>
-    <link rel="stylesheet" href="hire.css"type="text/css">
+    <link rel="stylesheet" href="css/hire.css"type="text/css">
 </head>
 <body>
     <button id="openFormBtn">Hire Registration</button>
@@ -50,31 +50,27 @@
         </div>
     </div>
     
-</body>
  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const modal = document.getElementById('formalModal');
-        const openBtn = document.getElementById('openFormBtn');
-        const closeBtn = document.getElementById('closeFormBtn');
+    const modal = document.getElementById('formModal');
+    const openBtn = document.getElementById('openFormBtn');
+    const closeBtn = document.getElementById('closeBtn');
 
-        if (openBtn && modal && closeBtn) {
-            openBtn.addEventListener('click', function() {
-                 modal.classList.add('active');
-                 modal.style.display = 'flex';
-            });
+    openBtn.addEventListener('click', function() {
+        modal.classList.add('active');
+        modal.style.display = 'flex';
+    });
 
-            closeBtn.addEventListener('click', function() {
-                modal.classList.remove('active');
-                modal.style.display = 'none';
-            });
+    closeBtn.addEventListener('click', function() {
+        modal.classList.remove('active');
+        modal.style.display = 'none';
+    });
 
-            window.addEventListener('click', function(event) {
-                if (event.target === modal) {
-                    modal.classList.remove('active');
-                    modal.style.display = 'none';
-                }
-            });
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.classList.remove('active');
+            modal.style.display = 'none';
         }
-    });    
- </script>
+    });
+ </script>   
+</body>
 </html>
