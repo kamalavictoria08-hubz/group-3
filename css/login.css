@@ -62,13 +62,12 @@ body {
 }
 
 .login-container {
-    background: white;
+    background: #c9ced2d7;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
-    background-image: url(OIP.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -106,8 +105,8 @@ h2 {
 .login-btn {
     width: 100%;
     padding: 12px;
-    background:
-    color: white;
+    background:aliceblue;
+    color: rgb(48, 47, 47);
     border: none;
     border-radius: 6px;
     font-size: 16px;
@@ -115,7 +114,7 @@ h2 {
 }
 
 .login-btn:hover {
-    background: #0056b3;
+    background: #2b72be;
 }
 
 .form-footer {
