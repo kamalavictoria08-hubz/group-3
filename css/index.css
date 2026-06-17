@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing:border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 span{
     color: rgb(228, 64, 5);
@@ -521,4 +524,14 @@ a:hover{
 .footer-end{
     display: flex;
     align-items: start;
+}
+.copyright{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 5em;
+}
+.copyright p{
+    color: white;
 }
