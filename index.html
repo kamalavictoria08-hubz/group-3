@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CarHire.com</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body class="homepage">
@@ -18,13 +19,13 @@
             <ul>
                 <li class="nav-links"><a href="index.html">Home</a></li>
                 <li class="nav-links"><a href="#">Cars</a></li>
-                <li class="nav-links"><a href="#">Bookings</a></li>
+                <li class="nav-links"><a href="book.html">Book</a></li>
                 <li class="nav-links"><a href="#">Contacts</a></li>
             </ul>
         </nav>
         <div class="auth-container">
             <ul>
-                <li class="auth-link"><a href="login.htm" id="#">Sign In</a></li>
+                <li class="auth-link"><a href="login.html">Sign In</a></li>
             </ul>
         </div>
     </header>
@@ -47,7 +48,7 @@
                         ready to take you where you need to go.
                     </p>
                     <div class="btn-container">
-                        <button class="btn" type="button">Book Car Now</button>
+                        <a href="hire.html"><button class="btn" type="button">Hire Car Now</button></a>
                         <button class="btn"><a href="Vehicles.html">View Cars</a></button>
                     </div>
                 </div>
@@ -110,6 +111,7 @@
                         <div class="div-btn">
                              <p><strong>PREMIUM</strong></p>
                             <button class="cat-btn">Hire</button>
+                           
                         </div>
                     </div>
                 </div>
@@ -246,6 +248,8 @@
 
     </main>
 
+    
+
     <footer class="footer-container">
             <div class="div-footer">
 
@@ -306,8 +310,8 @@
                 </div>
 
             </div>
-
     </footer>
-
+    <div id="modalWrapper" class="modal-overlay"></div>
+    
 </body>
 </html>

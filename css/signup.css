@@ -1,0 +1,85 @@
+.auth{
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h3{
+    font-weight: 750;
+}
+
+.signup {
+    border-radius: 20px;
+    width: 250px;
+    height:450px ;
+    display: flex;
+    padding: 30px;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.input-text{
+    width: 250px;
+    padding: 8px;
+    border: none;
+    margin: 12px ;
+    border-radius: 4px;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    width: 250px;
+    height: 35px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    transition: .4s ease;
+}
+button:hover {
+    background-color: #365d7ee8;
+}
+
+.auth-form{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.p-container{
+    display: flex;
+    align-items: center;
+}
+
+.text{
+    margin-left:15px;
+}
+
+.sign-in{
+    color: white;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.sign-in:hover{
+    color:  #365d7ee8;
+}
