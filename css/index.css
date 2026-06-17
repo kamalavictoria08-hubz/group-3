@@ -96,6 +96,51 @@ a:hover{
     font-weight: 700;
     color: white;
 }
+/* Darkened background backdrop (Hidden by default) */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Translucent dim overlay */
+    z-index: 9999; /* Forces popup on top of everything else */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Display setting triggered by JavaScript classList toggle */
+.modal-overlay.active {
+    display: flex;
+}
+
+/* Styling alignment wrapper matching your form structure */
+.modal-overlay .login-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Close interaction layout element */
+.close-modal {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.close-modal:hover {
+    color: #ff3333;
+}
 
 /**main content/
 
